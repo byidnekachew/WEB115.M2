@@ -10,7 +10,7 @@ window.onload = function(){
     alert(`Hello, class`)
 }
 
-// Write toe lements by ID
+// Write to elements by ID
 document.getElementById("myH1").innerHTML = "I love JavaScript";
 document.getElementById("myParagraph").textContent = "Hi guys"
 
@@ -26,3 +26,18 @@ document.body.appendChild(messageElement);
 document.body.style.color = "green"
 document.body.style.backgroundColor = "black"
 document.body.style.fontSize = "2em"
+
+// Event listeners
+document.getElementById("myH1").addEventListener("dblclick", function(){
+    // What happens when double click goes here
+    alert(`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`)
+    document.getElementById("myH1").style.color = "red"
+})
+document.getElementById('myButton').addEventListener("click",function(){
+    document.body.style.backgroundColor = "white"
+    alert(`HAHAHAAHAHAHAHA ${student} you got tricked!`)
+})
+
+// Difference between .innerHTML and .textContent
+console.log(document.getElementById("myParagraph").innerHTML)
+console.log(document.getElementById("myParagraph").textContent)
